@@ -9,6 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +18,7 @@
     <!--Nav bar-->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="Index.html"></a>
+            <a class="navbar-brand" href="index.html"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#narbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,6 +43,10 @@
                     <li class="nav-item">
                         <!-- Contact Me Link -->
                         <a class="nav-link" href="#contactMe">Contact me</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Contact Me Link -->
+                        <a class="nav-link" href="rescources.html" target="_blank">Resources for CA</a>
                     </li>
                 </ul>
             </div>
@@ -392,14 +398,43 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Electricity Supply Board</h5>
-                            <p>Janurary 2020</p>
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#esb">
+                                More info
+                            </button>
 
-                            <ul>
-                                <li>Use of PowerShell throughout ESB has heightened my knowledge and confidence with using the PowerShell command line.</li>
-                                <li>Running scripts within SQL Developer to obtain information about incoming meters and making sure they were AMR Ready.</li>
-                                <li>The automation of day-to-day tasks using PowerShell. Being the point of contact for creation of user accounts for the MDMS Database.</li>
-                                <li> Experiencing Putty in a real life work environment, moving files between servers and to/from peoples accounts.</li>
-                            </ul>
+                            <!-- The Modal -->
+                            <div class="modal" id="esb">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">ESB</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Janurary 2020</p>
+
+                                            <ul>
+                                                <li>Use of PowerShell throughout ESB has heightened my knowledge and confidence with using the PowerShell command line.</li>
+                                                <li>Running scripts within SQL Developer to obtain information about incoming meters and making sure they were AMR Ready.</li>
+                                                <li>The automation of day-to-day tasks using PowerShell. Being the point of contact for creation of user accounts for the MDMS Database.</li>
+                                                <li> Experiencing Putty in a real life work environment, moving files between servers and to/from peoples accounts.</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -413,13 +448,42 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Smyths Toys Superstore</h5>
-                            <p>September 2020</p>
-                            <ul>
-                                <p>Outdoor Sales Assistant</p>
-                                <li>Dealing with Customers with the upmost respect.</li>
-                                <li>Reporting to on-duty manager when necessary.</li>
-                                <li>Deconstruction of stock pallets and stocking shelfs.</li>
-                            </ul>
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#smyths">
+                                More info
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal" id="smyths">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Smyths Toys Superstore</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>September 2020</p>
+                                            <ul>
+                                                <p>Outdoor Sales Assistant</p>
+                                                <li>Dealing with Customers with the upmost respect.</li>
+                                                <li>Reporting to on-duty manager when necessary.</li>
+                                                <li>Deconstruction of stock pallets and stocking shelfs.</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -432,21 +496,52 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">The Galway Hooker</h5>
-                            <p>September 2018</p>
-                            <ul>
-                                <p>Bar Man</p>
-                                <li>Interacting with customers, taking orders and serving snacks and drinks.</li>
-                                <li>Service of food and beverage in the food and beverage outlets: events, restaurants and bars.</li>
-                                <li>Operations of tills, card machines, American express.</li>
-                                <li>Carry out table service and waiting duties.</li>
-                                <li>Carry out bar back duties / dealing with stock, Changing kegs.</li>
-                                <li>Ensure the highest level of customer satisfaction in food and beverage.</li>
-                                <li>Pulling pints, hot whiskeys, Irish coffees etc.</li>
-                                <li>Assessing bar customers’ needs, preferences, and making recommendations.
-                                </li>
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#TGH">
+                                More info
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal" id="TGH">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">The Galwawy Hooker</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>September 2018</p>
+                                            <ul>
+                                                <p>Bar Man</p>
+                                                <li>Interacting with customers, taking orders and serving snacks and drinks.
+                                                </li>
+                                                <li>Service of food and beverage in the food and beverage outlets: events, restaurants and bars.</li>
+                                                <li>Operations of tills, card machines, American express.</li>
+                                                <li>Carry out table service and waiting duties.</li>
+                                                <li>Carry out bar back duties / dealing with stock, Changing kegs.</li>
+                                                <li>Ensure the highest level of customer satisfaction in food and beverage.
+                                                </li>
+                                                <li>Pulling pints, hot whiskeys, Irish coffees etc.</li>
+                                                <li>Assessing bar customers’ needs, preferences, and making recommendations.
+                                                </li>
 
 
-                            </ul>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -470,8 +565,10 @@
                             <ul>
                                 <li>3 man team involving the development of an E-commerce file system.</li>
                                 <li>Development included creation of an account, logging in and making purchases, using a cart with visa payment option.</li>
-                                <li>Creation of Admin accounts to edit the websites content, add, update and delete.</li>
-                                <li>Agile environment which included reporting to supervisor each week on the project development.</li>
+                                <li>Creation of Admin accounts to edit the websites content, add, update and delete.
+                                </li>
+                                <li>Agile environment which included reporting to supervisor each week on the project development.
+                                </li>
                                 <li>Creation of database to allow for upploading of websites stock.</li>
                             </ul>
                         </div>
@@ -508,8 +605,10 @@
                             <ul>
                                 <li>Developing a model to detects a person's gender and age from static images using variious factors.</li>
                                 <li>Using OpenCV along with Python to develop an algorithmn.</li>
-                                <li>Using Convolutional NeuralNetworks to help avail of the motivations behind picture acknowledgement.</li>
-                                <li>Training the data using Pythins built in libraries such as Pandas, Numpy, and Sklearn.</li>
+                                <li>Using Convolutional NeuralNetworks to help avail of the motivations behind picture acknowledgement.
+                                </li>
+                                <li>Training the data using Pythins built in libraries such as Pandas, Numpy, and Sklearn.
+                                </li>
                             </ul>
                         </div>
                         <div class="card-footer">
@@ -533,56 +632,73 @@
                 </div>
             </div>
     </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <section id="contactMe">
-        <div class="container contact">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="contact-form">
             <h1>Contact Me</h1>
-            <div class="row">
-                <div class="col-md-3">
-
-                    <div class="contact-info">
-
-                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
-                        <h2>Contact Me</h2>
-                        <h4>I'd love to discuss oppertunities!</h4>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="contact-form">
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="fname">First Name:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="lname">Last Name:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="email">Email:</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="comment">Comment:</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" rows="5" id="comment"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="txtb">
+                <label>First Name: </label>
+                <input type="text" name="" value="" placeholder="Enter First Name">
             </div>
+
+            <div class="txtb">
+                <label>SurName: </label>
+                <input type="text" name="" value="" placeholder="Enter Second Name">
+            </div>
+
+            <div class="txtb">
+                <label>Email : </label>
+                <input type="text" name="" value="" placeholder="Enter Email Address">
+            </div>
+            <a class="btn1">Send</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p></p>
+
+
+        <!-- Social media layout -->
+
+        <div class="social-media-icons">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/leigh-warner-34baa0166/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/LeighWarner99" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
         </div>
 
-    </section>
+
+
+        <section>
+
+        </section>
+
+        <!-- Scroll top button-->
+        <a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+
+
+
+
 </body>
 
 </html>
